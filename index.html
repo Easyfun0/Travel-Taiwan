@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/Taiwan-small.jpeg">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css' integrity='sha512-vZWT27aGmde93huNyIV/K7YsydxaafHLynlJa/4aPy28/R1a/IxewUH4MWo7As5I33hpQ7JS24kwqy/ciIFgvg==' crossorigin='anonymous'/>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Travel</title>
+</head>
+<body>
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo">
+            <span>T</span>ravel
+        </a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#book">book</a>
+            <a href="#packages">package</a>
+            <a href="#services">services</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+        </form>
+    </header>
+
+    <!-- login -->
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="email">
+            <input type="password" class="box" placeholder="password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" name="" id="remember">
+            <label for="remember">Remember me</label>
+            <p>forget password <a href="#">click here</a></p>
+            <p>don't have and account? <a href="#">register now</a></p>
+        </form>
+    </div>
+
+
+    <!-- home -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Adventure</h3>
+            <p>discover Taiwan</p>
+            <a href="#" class="btn">discover more</a>
+        </div>
+        <div class="controls">
+            <span class="vid-btn active" data-src="images/Ocean.mp4"></span>
+            <span class="vid-btn" data-src="images/Sunset.mp4"></span>
+            <span class="vid-btn" data-src="images/Sunrise.mp4"></span>
+            <span class="vid-btn" data-src="images/Waterfall.mp4"></span>
+            <span class="vid-btn" data-src="images/Eternal Spring.mp4"></span>
+        </div>
+        <div class="video-container">
+            <video src="images/Ocean.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+        <div class="row">
+            <div class="image">
+                <img src="./images/travel.jpeg" alt="">
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <h3>welcome</h3>
+                    <input type="text" placeholder="place">
+                </div>
+                <div class="inputBox">
+                    <h3>how many</h3>
+                    <input type="number" placeholder="number of guests">
+                </div>
+                <div class="inputBox">
+                    <h3>arrivals</h3>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <h3>leaving</h3>
+                    <input type="date">
+                </div>
+                <input type="submit" class="btn" value="book now">
+            </form>
+        </div>
+    </section>
+
+    <section class="packages" id="packages">
+        <h1 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="./images/Hualien.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>Hualien</h3>
+                    <p>Named after the local Truku aboriginal tribe, Taroko National Park is one of Taiwan’s most beautiful sights. Created by the continual rising of the mountains combined with the erosive power of the Liwu River, Taroko Gorge with its tall, almost flat walls are a true marvel to view. Besides the gorge, other attractions include aboriginal settlements, temples, museums, and numerous hiking trails for visitors to experience the true beauty of mountainous Hualien County and eastern Taiwan.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> $90.00 <span>$100.00</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/Nantou.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>Nantou</h3>
+                    <p>Sun Moon Lake is one of the most famous landmark and touristic attractions in Taiwan</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> $90.00 <span>$60.00</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/taipei.jpeg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>Taipei</h3>
+                    <p>The capital city of the Republic of China (commonly referred to as Taiwan), Taipei City is widely regarded as the political, economic, and cultural center of Taiwan. Pronounced in Mandarin as Táiběi, the city is located in the northern part of the island in a basin between the Yangming Mountains and the Central Mountains. Consisting of 12 distinct districts, each with its own style and charm, Taipei is amazing modern city with an innumerable amount of historical attractions, numerous acclaimed night markets, shopping districts, as well as cultural amenities like modern coffee houses, museums, and fantastic nightlife.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> $90.00 <span>$120.00</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/kaohsiung.jpeg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>Kaohsiung</h3>
+                    <p>You will not be considered to visit Kaohsiung if you miss out Liuhe Night Market. As early as in 1950</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> $90.00 <span>$100.00</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/Taichung.jpeg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>Taichung</h3>
+                    <p>Taichung Park is the designated spot of tourists. You can row the boat in the lake and enjoy the beautiful surrounding</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> $90.00 <span>$120.00</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/Yilan.jpeg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>Yilan</h3>
+                    <p>The northernmost tourist site in the scenic area, Nanya is noted for its fantastic rock formations and sea-eroded coral shore</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> $90.00 <span>$90.00</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+        <div class="box-container">
+            <div class="box" >
+                <i class="fas fa-hotel"></i>
+                <h2>hotels</h2>
+                
+                <a href="https://taiwanstay.net.tw/legal-hotel-list?hospitable=1">Taiwan stay</a>
+                
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h2>food and drinks</h2>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum vel nihil consequatur alias facilis explicabo eius aliquid quis ut. Quam molestiae ipsa quos maiores facere animi quae voluptatem nulla iure.
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h2>safety guide</h2>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum vel nihil consequatur alias facilis explicabo eius aliquid quis ut. Quam molestiae ipsa quos maiores facere animi quae voluptatem nulla iure.
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h2>around the world</h2>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum vel nihil consequatur alias facilis explicabo eius aliquid quis ut. Quam molestiae ipsa quos maiores facere animi quae voluptatem nulla iure.
+            </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h2>plane</h2>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum vel nihil consequatur alias facilis explicabo eius aliquid quis ut. Quam molestiae ipsa quos maiores facere animi quae voluptatem nulla iure.
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h2>advanture</h2>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum vel nihil consequatur alias facilis explicabo eius aliquid quis ut. Quam molestiae ipsa quos maiores facere animi quae voluptatem nulla iure.
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <h1 class="heading">
+            <span>g</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>e</span>
+            <span>r</span>
+            <span>y</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="./images/scenery/IMG_0451.JPG" alt="">
+                <div class="content">
+                    <h3>Glory Pier</h3>
+                    <p>Glory Wharf is located at the junction of the mouth of the Love River and Kaohsiung Port. It used to be the pier for the transportation of Golden Horse personnel and military supplies</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/scenery/IMG_0730.JPG" alt="">
+                <div class="content">
+                    <h3>Chengcing Lake</h3>
+                    <p>Cheng Cheng Lake, located in Niaosong District, occupies a vast area. It was originally the irrigation pond of Caogongzhen and is the largest lake in Kaohsiung City.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/scenery/land1.JPG" alt="">
+                <div class="content">
+                    <h3>Magang</h3>
+                    <p>Magang is a traditional fishing village, where residents used to engage in fishing</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/scenery/land2.JPG" alt="">
+                <div class="content">
+                    <h3>Jinshan</h3>
+                    <p>Jinshan District is rich in archaeological sites and cultural relics, and is one of the few prehistoric cultures in Taiwan that can link the cultural heritage of modern aboriginal peoples</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/scenery/land3.JPG" alt="">
+                <div class="content">
+                    <h3>Chengcing Lake</h3>
+                    <p>The beautiful Jiuqu Bridge is reflected in the sparkling lake water</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/scenery/land4.JPG" alt="">
+                <div class="content">
+                    <h3>Yangmingshan</h3>
+                    <p>The volcanic landscape dominated by the Datun volcanic group is the main feature of Yangmingshan National Park</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/scenery/land5.JPG" alt="">
+                <div class="content">
+                    <h3>Dajia Riverside Park</h3>
+                    <p>Dajia Riverside Park is located between Zhongshan Bridge and Dazhi Bridge in Zhongshan District. It is a metropolitan green park developed and constructed by the municipal government after the Keelung River is cut and straightened.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/scenery/land6.JPG" alt="">
+                <div class="content">
+                    <h3>得月樓</h3>
+                    <p>The resturant next to the lake</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="review" id="review">
+        <h1 class="heading">
+            <span>r</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>e</span>
+            <span>w</span>
+        </h1>
+        <div class="swiper-container review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./images/cat1.png" alt="">
+                        <h3>EJ</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At voluptas, dignissimos amet ipsa deserunt minima laboriosam fuga harum iure sunt voluptatibus quo aut suscipit enim quae asperiores dicta ex accusamus.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./images/cat2.jpeg" alt="">
+                        <h3>AJ</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At voluptas, dignissimos amet ipsa deserunt minima laboriosam fuga harum iure sunt voluptatibus quo aut suscipit enim quae asperiores dicta ex accusamus.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./images/cat3.jpeg" alt="">
+                        <h3>RJ</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At voluptas, dignissimos amet ipsa deserunt minima laboriosam fuga harum iure sunt voluptatibus quo aut suscipit enim quae asperiores dicta ex accusamus.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="heading">
+            <span>c</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+        </h1>
+        <div class="row">
+            <div class="image">
+                <img src="./images/taiwan-welcome.jpeg" alt="">
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="number">
+                    <input type="text" placeholder="subject">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+                <input type="submit" class="btn" value="send message">
+            </form>
+        </div>
+    </section>
+
+    <section class="brand-container">
+        <div class="brand-slider swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/brand/footer_disease.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/brand/footer_na_craditcard.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/brand/footer_taiwan.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/brand/logo_jcb.gif" alt=""></div>
+                <div class="swiper-slide"><img src="./images/brand/logo_master.gif" alt=""></div>
+                <div class="swiper-slide"><img src="./images/brand/logo_visa.gif" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>about us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio doloremque odio voluptas porro ipsum itaque numquam unde, error aliquam quisquam omnis. Soluta doloremque, non at eum tempore itaque fugit! Modi!</p>
+            </div>
+            <div class="box">
+                <h3>branch locations</h3>
+                <a href="#">Taipei</a>
+                <a href="#">Kaohsiung</a>
+                <a href="#">Taichung</a>
+                <a href="#">Hualien</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">book</a>
+                <a href="#">packages</a>
+                <a href="#">services</a>
+                <a href="#">gallery</a>
+                <a href="#">review</a>
+                <a href="#">contact</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="https://www.facebook.com/">Facebook</a>
+                <a href="https://www.instagram.com/?hl=zh-tw">Instagram</a>
+                <a href="https://twitter.com/">Twitter</a>
+                <a href="https://www.linkedin.com/">Linkedin</a>
+            </div>
+        </div>
+        <h1 class="credit">created by <span>EJ</span></h1>
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/swiper.js"></script>
+</body>
+</html>
